@@ -3,7 +3,7 @@ import ImageCard from "../ImageCard/ImageCard";
 
 const ImageGallery = ({ images, onClick }) => {
   return (
-    <div>
+    <div className={s.galleryBox}>
       <ul className={s.gallery}>
         {images.map((item) => (
           <li key={item.id}>
