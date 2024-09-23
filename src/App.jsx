@@ -64,7 +64,7 @@ function App() {
       )}
       {isLoading && <Loader />}
       {isError && <ErrorMessage />}
-      <LoadMoreBtn onClick={handleChangePage} />
+      {images.length > 0 && <LoadMoreBtn onClick={handleChangePage} />}
       {isOpen && (
         <ImageModal
           isOpen={isOpen}
